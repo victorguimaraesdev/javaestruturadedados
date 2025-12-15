@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import java.util.Queue;
 public class App {
     public static void main(String[] args) throws Exception {
             //List
@@ -24,9 +25,11 @@ public class App {
             map.put("Nome", "Victor");
             map.put("Ocupação", "Dev");
             System.out.println("Chave Nome do Map:" + map.get("Nome"));
-
-
-
-
+            //Queue
+            Queue<String> queue = new LinkedList<String>();
+            queue.add("Victor");
+            queue.add("Bruna");
+            System.out.println("Primeiro valor:" + queue.poll());
+            System.out.println("Lista Queue:" + queue);
     }
 }
