@@ -12,6 +12,8 @@ public class App {
             List<String> list = new ArrayList<String>();
             list.add("Victor");
             list.add("Bruna");
+            list.add("Victor Guirmarães");
+            list.add("Victor Hugo");
             String name = list.get(0);
             System.out.println("nome:" + name); 
             System.out.println("Lista do List:" +list);
@@ -31,5 +33,9 @@ public class App {
             queue.add("Bruna");
             System.out.println("Primeiro valor:" + queue.poll());
             System.out.println("Lista Queue:" + queue);
+
+            List<String> newList =list.stream().filter(nome -> nome.startsWith("Victor")).toList();
+            System.out.println("NewList:" + newList);
+
     }
 }
